@@ -11,21 +11,25 @@
 <thead>
 <tr><td rowspan="1" colspan="3">006</td></tr>
 </thead><tbody>
+<!--Go to Intranet-->
 <tr>
 	<td>open</td>
 	<td>/portal/intranet/</td>
 	<td></td>
 </tr>
+<!--Login as Mary-->
 <tr>
 	<td>clickAndWait</td>
 	<td>link=Login as Mary</td>
 	<td></td>
 </tr>
+<!--Go to Content Explorer-->
 <tr>
 	<td>clickAndWait</td>
 	<td>link=Sites Explorer</td>
 	<td></td>
 </tr>
+<!--Add a free layout web content-->
 <tr>
 	<td>click</td>
 	<td>xpath=(//a[contains(text(),'New Content')])[2]</td>
@@ -46,6 +50,7 @@
 	<td>link=Save &amp; Close</td>
 	<td></td>
 </tr>
+<!--Add a comment-->
 <tr>
 	<td>waitForElementPresent</td>
 	<td>//a[@title=&quot;Collaboration&quot;]</td>
@@ -81,21 +86,25 @@
 	<td>css=textarea.cke_source.cke_enable_context_menu</td>
 	<td>comment start &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt; Comment end</td>
 </tr>
+<!--Save the comment-->
 <tr>
 	<td>click</td>
 	<td>link=Save</td>
 	<td></td>
 </tr>
+<!--Click Show comments-->
 <tr>
 	<td>click</td>
 	<td>link=Show comments</td>
 	<td></td>
 </tr>
+<!--Capture screenshot-->
 <tr>
 	<td>captureEntirePageScreenshot</td>
 	<td>/home/ngoctm1/selenium-IDE/ECMS-regression-test-Selenium-IDE/imgs/006-sn.png</td>
 	<td></td>
 </tr>
+<!--Logout-->
 <tr>
 	<td>clickAndWait</td>
 	<td>link=Logout</td>
